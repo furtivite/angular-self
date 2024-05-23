@@ -22,7 +22,7 @@ import { HousingLocation } from '../../interfaces';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent {
-  readonly baseUrl = 'https://angular.dev/assets/tutorials/common';
+  readonly baseUrl = 'https://angular.io/assets/images/tutorials/faa';
 
   housingLocation: HousingLocation = {
     id: 9999,

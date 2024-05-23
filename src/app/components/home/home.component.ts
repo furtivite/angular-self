@@ -32,15 +32,19 @@ import { HousingLocation } from '../../interfaces';
 export class HomeComponent {
   readonly baseUrl = 'https://angular.io/assets/images/tutorials/faa';
 
-  housingLocationList;
+  housingLocationList: HousingLocation[] = [];
 
   housingService: HousingService = inject(HousingService);
 
   filteredLocationList: HousingLocation[] = [];
 
   constructor() {
-    this.housingLocationList = this.housingService.getAllHousingLocations();
-    this.filteredLocationList = this.housingLocationList;
+    this.housingService
+      .getAllHousingLocations()
+      .then((housingLocationList: HousingLocation[]) => {
+        this.housingLocationList = housingLocationList;
+        this.filteredLocationList = housingLocationList;
+      });
   }
 
   filterResults(text: string) {

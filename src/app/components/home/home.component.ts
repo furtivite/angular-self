@@ -33,5 +33,5 @@ export class HomeComponent {
     availableUnits: 99,
     wifi: true,
     laundry: false,
-  }
+  };
 }

@@ -13,7 +13,6 @@ import {HousingLocation} from '../../interfaces';
         class="listing-photo"
         [src]="housingLocation?.photo"
         alt="Exterior photo of {{ housingLocation?.name }}"
-        crossorigin
       />
       <section class="listing-description">
         <h2 class="listing-heading">{{ housingLocation?.name }}</h2>

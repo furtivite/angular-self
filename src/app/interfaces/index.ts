@@ -1,0 +1,1 @@
+export { Housinglocation } from './housinglocation';

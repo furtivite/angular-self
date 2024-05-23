@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
-import { RouterModule } from '@angular/router';
-import { HomeComponent } from './components';
+import {RouterModule} from '@angular/router';
+import {HomeComponent} from './components';
 
 @Component({
   selector: 'app-root',
@@ -19,7 +19,7 @@ import { HomeComponent } from './components';
         </header>
       </a>
       <section class="content">
-        <app-home></app-home>
+        <router-outlet></router-outlet>
       </section>
     </main>
   `,

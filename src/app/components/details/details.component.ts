@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
       details works!
     </p>
   `,
-  styles: ``
+  styleUrls: ['./details.component.css'],
 })
 export class DetailsComponent {
 

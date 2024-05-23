@@ -1,1 +1,1 @@
-export { Housinglocation } from './housinglocation';
+export { HousingLocation } from './housinglocation';

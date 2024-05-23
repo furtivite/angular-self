@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { HousingLocationComponent } from '../housing-location';
 import { HousingService } from 'src/app/services';
+import { HousingLocation } from 'src/app/interfaces';
 
 @Component({
   selector: 'app-home',
@@ -30,7 +31,10 @@ export class HomeComponent {
 
   housingService: HousingService = inject(HousingService);
 
+  filteredLocationList: HousingLocation[] = [];
+
   constructor() {
     this.housingLocationList = this.housingService.getAllHousingLocations();
+    this.filteredLocationList = this.housingLocationList;
   }
 }
